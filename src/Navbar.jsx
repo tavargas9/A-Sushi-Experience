@@ -17,14 +17,14 @@ export default function Navbar() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: '100%'
+        width: '100%',
     }}>    
         <Tabs value={value} onChange={handleChange}>
             <Tab label="Home" />
             <Tab label="Menu"/>
             <Tab label="Contact" />
         </Tabs>
-        <Box mt={2}>
+        <Box mt={2} mr={14}>
             <Box height={100}><img style={{height: '100%'}} src='../public/logo_intro.png'/></Box> 
             <Typography variant='subtitle2' color={'primary'}>
                  A Sushi Experience 
