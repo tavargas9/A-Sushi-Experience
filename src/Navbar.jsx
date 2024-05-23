@@ -17,8 +17,10 @@ export default function Navbar() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: '80%',
+        width: '100%',
+        maxWidth: 'inherit',
         position: 'fixed',
+        backgroundColor: 'white',
     }}>    
         <Tabs value={value} onChange={handleChange}>
             <Tab label="Home" />
@@ -27,9 +29,6 @@ export default function Navbar() {
         </Tabs>
         <Box mt={2} mr={14} mb={3}>
             <Box height={100}><img style={{height: '100%'}} src='/logo_intro.png'/></Box> 
-            <Typography variant='subtitle2' color={'primary'}>
-                 A Sushi Experience 
-            </Typography>
         </Box>
         <Box sx={{
             width: '10rem',
